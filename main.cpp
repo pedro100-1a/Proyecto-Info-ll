@@ -17,7 +17,7 @@ void texto(RenderWindow * w){
     text.setFont(font); // font is a sf::Font
     
     // set the string to display
-    text.setString("Hola");
+    text.setString("xdrtxhcr");
 
     // set the character size
     text.setCharacterSize(24); // in pixels, not points!
