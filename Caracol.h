@@ -8,15 +8,23 @@ using namespace sf;
 
 class Caracol{
 private:
-	int x;
+
+    
+	
+	
+public:
+    
+    
+    int x;
 	int y;
 	int velX;
 	int velY;
 	int ancho;
 	int alto;
-	Sprite spt;
-	
-public:
+    
+    
+    RectangleShape spt;
+    
 	Caracol(Texture *tex, int x, int y);
 	
 	void mover();
@@ -30,11 +38,11 @@ public:
 	void girar(char dire);
 	
 	
-	// Agregadas
-	
 	int getMedioX();
 	
 	int getY();
+    
+
 	
 	
 };

@@ -1,0 +1,6 @@
+#include "Frutas_y_Verduras.h"
+
+Frutas_y_Verduras::Frutas_y_Verduras() {
+	
+}
+

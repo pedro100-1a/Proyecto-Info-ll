@@ -1,9 +1,11 @@
 #include "Caracol.h"
 
+
 Caracol::Caracol(Texture *tex, int x, int y) {
-	spt.setTexture(*tex);
+	spt.setTexture(tex);
 	ancho = tex->getSize().x;
 	alto = tex->getSize().y;
+    spt.setSize(Vector2f(ancho,alto));
 	
 	this->x = x;
 	this->y = y;
@@ -20,17 +22,33 @@ void Caracol::dibujar(RenderWindow *w) {
 
 void Caracol::arriba() {
 	y += -5;
+    if (y == -45){
+        y= 600;
+    }
 }
 
 void Caracol::abajo() {
 	y += 5;
+    if (y == 600){
+        y= -45;
+    }
+    
 }
 
 void Caracol::girar(char dire) {
-	if (dire == 'i')
+	if (dire == 'i'){
 		x += -5;
-	else if (dire == 'd')
+        if (x == -90 ){
+            x=650;
+        }
+    }
+    
+	else if (dire == 'd'){
 		x += 5;
+        if (x == 650 ){
+            x= -90;
+        }
+    }
 }
 
 int Caracol::getMedioX() {
